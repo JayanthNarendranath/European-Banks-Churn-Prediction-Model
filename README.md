@@ -1,13 +1,10 @@
 # Machine-Learning-Project-2
 
- which
-contains if the customers subscribed to it or not. The label column was label encoded. A
-pipeline was created to apply encoding to certain columns, apply logarithm, and replace
-the outliers with the mode. The pipeline was used to run through the following proposal,
-which dwells over the background of the business data that was used to make predictions
-and better quality decisions. The business data is collected from a campaign (what bank it is)
-via multiple ways of approaches such as mobile phone calls, text messages, and social media.
-The campaign was hosted to get customers to subscribe for fixed deposits in the bank.
+The following proposal dwells on the background of the business data that was
+used to make predictions and better quality decisions. The business data is
+collected from a campaign (what bank it is) via multiple approaches such as
+mobile phone calls, text messages, and social media. The campaign was hosted to get
+customers to subscribe for fixed deposits in the bank.
 
 The domain knowledge of this dataset is related to a bank. The type of dataset is
 classification. The label of the dataset is the column, ‘y’, which has either Yes or No,
@@ -30,11 +27,14 @@ of the numerical columns was changed for better visualization. For example, a lo
 was applied to the data values of that table if the statistics of that table match a
 right-skewed graph to demonstrate normal distribution.
 
-The data was split into features and labels. The label is column, y, multiple machine
-learning models such as Logistic Regression, Decision Trees, Random Forests, and XG
+The data was split into features and labels. The label is column y, which
+contains whether the customers subscribed it or not. The label column was label encoded. A
+pipeline was created to apply encoding to certain columns, apply logarithm, and replace
+the outliers with the mode. The pipeline was used to run through multiple machine-learning models
+such as Logistic Regression, Decision Trees, Random Forests, and XG
 Boost. Random Forest gave the highest accuracy of 90 percent. Hyperparameter tuning
-was done by applying the grid search technique, and the parameters were tuned by using
-the default value within a range of potential values to check if the accuracy could be
+was done to by applying the grid search technique, and the parameters were tuned by using
+the default value within a range of potential values to check if the accuracy can be
 increased. However, in the case of this data, the accuracy was not increased.
 
 Firstly, the Local Interpretable Model-agnostic Explanation was applied by
@@ -54,7 +54,7 @@ improvement of increasing the accuracy.
 
 Therefore, the data was about the European Bank, which hosted a campaign to
 bring their customers into subscribing to them for fixed deposits. The data was gathered
-from the Kaggle website in CSV form and was loaded in to visualize as a data frame
+from the Kaggle website in CSV form and was loaded to visualize as a data frame
 using pandas. The data was pre-processed by dropping null values and duplicates and
 visualized to view categorical and numerical values. The data types were changed
 when needed and split into training and testing sets. The split data was run
@@ -64,5 +64,5 @@ accuracy of 90 percent. Hyperparameter tuning was done on the Random Forest mode
 because it resulted in the highest accuracy using the grid search technique. The Local
 Interpretable Model-agnostic Explanation was applied to view which features made the
 customer to subscribe in or not. Two deep learning models: MLP Classifier and
-Sequential were applied, resulting in 80 percent and 50 percent accuracy,
+Sequential were applied, which resulted in 80 percent and 50 percent accuracy,
 respectively.
